@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+}
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    background: url(../img/geometry2.png);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+}
+
+* {
+    list-style-type: none;
+}
+
+.stats {
+    text-align: left;
+}
+
+.stars{
+    display: inline-block;
+}
+
+.hands{
+    display: inline-block;
+    margin-left: 40px;
+    min-width: 66px;
+}
+
+.time{
+    margin-left: 30px;
+    display: inline-block;
+    min-width: 80px;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #111;
+    font-weight: bold;
+}
+
+.refresh{
+    margin-left: 40px;
+}
+
+#myid{
+    margin-left: -10px;
+    max-width: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+/* style the board */
+.board{
+    background: linear-gradient(45deg, #ccc , #999);
+    padding: 10px 0px 10px 0;
+    border-radius: 4px;
+    //opacity: 0.9;
+    box-shadow: 2px 2px 15px 7px #111;
+
+}
+
+/*style for the cards */
+.card {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px #111;
+    background: #535353;
+}
+
+.card > .hideIcons {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.openNow {
+    background: #ffffff;
+    transform: rotateY(180deg);
+    transition: all 2s;
+}
+
+.fixed{
+    background: #ffffff;
+    transform: rotateY(180deg);
+}
+
+/*icons inside cards */
+.showIcons{
+    display: inline-block;
+    font-size: 35px;
+    //font-weight: 1;
+    width: inherit;
+    line-height: 125px;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0.8s, opacity 0.5s linear;
+    transform: rotateY(180deg);
+}
+
+.match {
+    box-shadow: 5px 5px 30px 10px rgba(25,217,21,0.52);
+    transform: scale(1.1);
+    transition: box-shadow 0.3s;
+}
+
+.notMatch{
+    background: #d71111;
+    transition: all 0.5s;
+    opacity: 0.7;
+}
