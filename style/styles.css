@@ -1,6 +1,7 @@
 html{
     box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after{
@@ -12,9 +13,12 @@ body{
     background: url(../img/geometry2.png);
 }
 
-.container {
+.container{
     margin: 0 auto;
     max-width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 h1{
@@ -68,9 +72,7 @@ button {
     background: linear-gradient(45deg, #ccc , #999);
     padding: 10px 0px 10px 0;
     border-radius: 4px;
-    //opacity: 0.9;
     box-shadow: 2px 2px 15px 7px #111;
-
 }
 
 /*style for the cards */
