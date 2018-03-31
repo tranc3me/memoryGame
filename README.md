@@ -20,10 +20,10 @@ WIN !
 
 This is for Udacity education purposes only !
 
-##Version
+## Version
 
 * v1.0.0
 
-#Author
+# Author
 
->tr4nc3
+> tr4nc3
