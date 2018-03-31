@@ -2,7 +2,7 @@
 
 ## Direct link to the game
 
-* [Memory Game](http://google.com 
+* [Memory Game](https://tranc3me.github.io/memoryGame/)
 
 ## Instructions
 
@@ -18,5 +18,12 @@ WIN !
 
 ## How to contribute
 
-**You can't !**
 This is for Udacity education purposes only !
+
+##Version
+
+* v1.0.0
+
+#Author
+
+>tr4nc3
