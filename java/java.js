@@ -174,16 +174,30 @@ function stayOpen(){
 
 function addHand(){
     hand++;
+    const stars=document.querySelectorAll('.fa-star')
     const hands= document.querySelector('.hands')
     hands.innerHTML =  `Hands: <i>${hand}</i>`
+
+    if(hand===9){
+        stars[4].style.color= "#ffffff"
+    }
+    if(hand===14){
+        stars[3].style.color= "#ffffff"
+    }
+    if(hand===19){
+        stars[2].style.color= "#ffffff"
+    }
+    if(hand===24){
+        stars[1].style.color= "#ffffff"
+    }
+
 };
 
 
 // timer function //
 function timeGet(){
-    const stars=document.querySelectorAll('.fa-star')
-
-    this.run = function(){
+   
+  this.run = function(){
         var interval= setInterval(startTime,10)
 
         function startTime(){
@@ -206,20 +220,6 @@ function timeGet(){
 
             const updateTime= document.querySelector('.time')
             updateTime.innerHTML=`${min} : ${sec} : ${msec}`
-
-
-            if(time===3000){
-                stars[4].style.color= "#ffffff"
-            }
-            if(time===4000){
-                stars[3].style.color= "#ffffff"
-            }
-            if(time===5000){
-                stars[2].style.color= "#ffffff"
-            }
-            if(time===7000){
-                stars[1].style.color= "#ffffff"
-            }
 
         }
 
