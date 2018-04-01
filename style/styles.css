@@ -41,13 +41,13 @@ h1{
 .hands{
     display: inline-block;
     margin-left: 40px;
-    min-width: 66px;
+    min-width: 100px;
 }
 
 .time{
     margin-left: 30px;
     display: inline-block;
-    min-width: 80px;
+    min-width: 110px;
 }
 
 button {
